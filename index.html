@@ -1,23 +1,436 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#e3ff55">
+    <meta
+      name="description"
+      content="Unform is an independent team of three helping good causes and nonprofits stand out, reach more people, and turn attention into action."
+    >
+    <title>Unform — Good causes. Bold design.</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23e3ff55' d='M0 0h64v64H0z'/%3E%3Cpath fill='none' stroke='%23171717' stroke-width='10' d='M18 16v22a14 14 0 0028 0V16'/%3E%3C/svg%3E"
+    >
     <link rel="stylesheet" href="styles.css">
-    <title>Unform</title>
-</head>
-<body>
-    <header>
-        <nav class="topnav" aria-label="Primary navigation">
-            <div class="logo">
-                <a href="index.html"><img src="assets/logos/unform-primary.svg" alt="Unform Logo"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <script src="vendor/gsap.min.js" defer></script>
+    <script src="vendor/ScrollTrigger.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header wrap">
+      <a class="wordmark" href="#" aria-label="Unform home">
+        <img src="assets/logo-wordmark.svg" alt="Unform" width="180" height="58">
+      </a>
+
+      <div class="header-note">Independent minds.<br>Shared purpose.</div>
+
+      <nav aria-label="Main navigation">
+        <a href="#approach">Approach</a>
+        <a href="#work">Work</a>
+        <a href="#studio">Studio</a>
+      </nav>
+
+      <a class="contact-link" href="#contact">
+        Let’s make a difference<span class="tiny-square" aria-hidden="true"></span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">
+        Menu <span aria-hidden="true">+</span>
+      </button>
     </header>
-</body>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#approach">Approach</a>
+      <a href="#work">Work</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Let’s talk</a>
+    </nav>
+
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-art">
+          <canvas id="halftone" aria-hidden="true"></canvas>
+        </div>
+
+        <div class="eyebrow hero-eyebrow">
+          <span class="index-mark">[U—01]</span> DESIGN FOR A WORLD WORTH CHANGING
+        </div>
+
+        <h1 id="hero-title">
+          <span class="headline-line">Good causes.</span>
+          <span class="headline-line">Bold <span class="headline-emphasis">design.</span></span>
+          <span class="headline-line final-line">
+            Real impact<span class="period">.</span>
+          </span>
+        </h1>
+
+        <div class="hero-bottom">
+          <p>
+            We help good causes stand out.<br>
+            So they can bring more people in.
+          </p>
+
+          <a href="#approach" class="text-link">
+            Meet your creative partners <span class="link-rule" aria-hidden="true"></span>
+          </a>
+
+          <button id="motion-toggle" class="art-control" aria-pressed="false">
+            <span class="control-icon" aria-hidden="true">Ⅱ</span>
+            <span class="control-label">Pause motion</span>
+          </button>
+        </div>
+
+        <div class="hero-caption">
+          <span>SMALL STUDIO. BIG REASON TO EXIST.</span>
+          <span class="interaction-note">MOVE YOUR CURSOR. MAKE AN IMPACT.</span>
+        </div>
+      </section>
+
+      <section id="approach" class="mission wrap">
+        <div class="section-label">
+          01 / OUR REASON<span class="section-symbol" aria-hidden="true">✳</span>
+        </div>
+
+        <div class="reveal">
+          <h2>
+            Good shouldn’t<br>
+            go unnoticed.
+          </h2>
+
+          <p>You’re making the world better. We make sure the world sees it.</p>
+
+          <div class="mission-copy">
+            <p>
+              Unform is a design studio for nonprofits, changemakers, and people who give a
+              damn. We turn a clear purpose into a distinctive identity, a thoughtful website,
+              and a story that moves people.
+            </p>
+            <p>
+              Because more attention should mean more support. More hands on deck. More lives
+              changed.
+            </p>
+          </div>
+
+          <a class="text-link" href="#services">
+            Here’s how we help <span class="link-rule" aria-hidden="true"></span>
+          </a>
+        </div>
+      </section>
+
+      <section id="work" class="work wrap">
+        <div class="section-heading">
+          <span class="section-label">02 / PURPOSE IN PRACTICE</span>
+          <span class="small-note">A glimpse of what good can look like.</span>
+        </div>
+
+        <button class="project-image" aria-haspopup="dialog" data-open-project>
+          <img
+            src="assets/good-grows.png"
+            alt="Bold yellow, white and blue community garden campaign posters reading Good Grows Here"
+            width="1536"
+            height="1024"
+            loading="lazy"
+          >
+          <span class="project-badge">
+            Explore the concept <span aria-hidden="true">+</span>
+          </span>
+        </button>
+
+        <div class="project-caption">
+          <div>
+            <h3>Good grows here.</h3>
+            <p>A little action. A bigger future.</p>
+          </div>
+
+          <div class="project-tags">
+            <span>Campaign concept</span>
+            <span>Identity &amp; art direction</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services wrap">
+        <div class="section-heading">
+          <span class="section-label">03 / WHAT WE BRING</span>
+          <span class="small-note">From the first question to the final detail.</span>
+        </div>
+
+        <div class="services-layout">
+          <h2>
+            Purpose,<br>
+            meet<br>
+            <span class="accent-text">possibility.</span>
+          </h2>
+
+          <div class="service-list">
+            <details class="service" data-cursor-icon="assets/Strategy.svg" open>
+              <summary>
+                <span class="service-number">01</span>
+                <span>Strategy &amp; story</span>
+                <span class="plus" aria-hidden="true">+</span>
+              </summary>
+
+              <div class="service-content">
+                <p>
+                  Find the thing that makes your cause impossible to confuse with anyone else.
+                  Then find the words to make people care.
+                </p>
+                <ul>
+                  <li>Brand positioning</li>
+                  <li>Messaging &amp; tone of voice</li>
+                  <li>Creative direction</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="service" data-cursor-icon="assets/identity.svg">
+              <summary>
+                <span class="service-number">02</span>
+                <span>Brand &amp; identity</span>
+                <span class="plus" aria-hidden="true">+</span>
+              </summary>
+
+              <div class="service-content">
+                <p>
+                  A recognisable identity that feels like you. Built to stand out in the world and
+                  work hard in your team’s hands.
+                </p>
+                <ul>
+                  <li>Visual identity</li>
+                  <li>Design systems</li>
+                  <li>Brand guidelines &amp; templates</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="service" data-cursor-icon="assets/experience.svg">
+              <summary>
+                <span class="service-number">03</span>
+                <span>Digital experiences</span>
+                <span class="plus" aria-hidden="true">+</span>
+              </summary>
+
+              <div class="service-content">
+                <p>
+                  Welcoming, accessible websites that make your mission clear and the next step
+                  easy. From discovering your cause to getting involved.
+                </p>
+                <ul>
+                  <li>Web design &amp; development</li>
+                  <li>User experience</li>
+                  <li>Accessible digital design</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="service" data-cursor-icon="assets/Clapper.svg">
+              <summary>
+                <span class="service-number">04</span>
+                <span>Campaigns &amp; action</span>
+                <span class="plus" aria-hidden="true">+</span>
+              </summary>
+
+              <div class="service-content">
+                <p>
+                  Turn a message into a movement. Clear ideas and expressive design to help your
+                  next appeal, event, or initiative reach the right people.
+                </p>
+                <ul>
+                  <li>Campaign concepts</li>
+                  <li>Art direction &amp; motion</li>
+                  <li>Print &amp; social toolkits</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="studio" class="studio wrap">
+        <div class="section-heading">
+          <span class="section-label">04 / THE PEOPLE BEHIND THE PURPOSE</span>
+          <span class="small-note">Independent by choice. Collaborative by nature.</span>
+        </div>
+
+        <div class="studio-main">
+          <div class="team-count" aria-label="Three people">
+            3<span class="count-star" aria-hidden="true">✳</span>
+            <span class="count-caption">PEOPLE. ONE SHARED BELIEF.</span>
+          </div>
+
+          <div class="studio-copy reveal">
+            <h2>
+              Small team.<br>
+              All in.
+            </h2>
+            <p>We’re three creative minds who believe good design should do some good.</p>
+            <p class="body-copy">
+              You work directly with the people doing the thinking and making. We ask questions,
+              challenge assumptions, and care about the details as much as the bigger picture.
+            </p>
+            <p class="body-copy">Your cause becomes our cause. That’s how we like to work.</p>
+          </div>
+        </div>
+
+        <div class="principles">
+          <div>
+            <span>01 / CLOSE BY DESIGN</span>
+            <h3>
+              Fewer layers.<br>
+              Better conversations.
+            </h3>
+          </div>
+
+          <div>
+            <span>02 / CURIOUS AT HEART</span>
+            <h3>
+              Listen first.<br>
+              Make it matter.
+            </h3>
+          </div>
+
+          <div>
+            <span>03 / HERE FOR THE GOOD</span>
+            <h3>
+              Shared values.<br>
+              Real commitment.
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact wrap">
+        <div class="section-heading">
+          <span class="section-label">05 / SOMETHING GOOD STARTS HERE</span>
+          <span class="small-note">Good people. Good conversations.</span>
+        </div>
+
+        <h2 class="reveal">
+          Have a cause?<br>
+          Let’s give it <span>form.</span>
+        </h2>
+
+        <div class="contact-bottom">
+          <p>
+            Tell us what you believe in.<br>
+            We’ll help the world believe in it too.
+          </p>
+          <button class="project-cta" data-open-brief>
+            Start a project <span aria-hidden="true">+</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer wrap">
+      <a class="wordmark" href="#" aria-label="Unform back to top">
+        <img src="assets/logo-wordmark.svg" alt="Unform" width="180" height="58">
+      </a>
+      <span>Good causes. Bold design. Real impact.</span>
+      <span>© <span id="year">2026</span> Unform</span>
+      <a href="#">Back to top</a>
+    </footer>
+
+    <div id="service-cursor-icon" class="service-cursor-icon" aria-hidden="true"></div>
+
+    <dialog id="project-dialog" aria-labelledby="project-title">
+      <button class="dialog-close" aria-label="Close campaign concept">×</button>
+      <span class="section-label">UNFORM / SELF-INITIATED EXPLORATION</span>
+      <h2 id="project-title">Good grows here.</h2>
+      <img
+        src="assets/good-grows.png"
+        alt="Good Grows Here community garden campaign concept"
+        width="1536"
+        height="1024"
+      >
+
+      <div class="case-description">
+        <p>
+          A campaign concept that makes small, local actions feel part of something bigger.
+          Built around community gardens and the people who bring them to life.
+        </p>
+        <p>
+          Big typography creates an immediate invitation. Botanical halftones bring nature into an
+          unmistakably graphic identity. A simple toolkit carries the idea from a street poster to a
+          social post.
+        </p>
+        <p class="case-note">An independent creative exploration by Unform.</p>
+      </div>
+
+      <button class="solid-button" data-project-to-brief>
+        Let’s create something for your cause
+      </button>
+    </dialog>
+
+    <dialog id="brief-dialog" aria-labelledby="brief-title">
+      <button class="dialog-close" aria-label="Close project brief">×</button>
+      <span class="section-label">LET’S GET TO KNOW YOUR CAUSE</span>
+      <h2 id="brief-title">
+        Good starts<br>
+        with a conversation.
+      </h2>
+
+      <p class="dialog-intro">
+        A few thoughts to get us started. Download your brief and keep it ready for our first
+        conversation.
+      </p>
+
+      <form id="brief-form">
+        <label>
+          Your name
+          <input
+            name="name"
+            autocomplete="name"
+            required
+            placeholder="What should we call you?"
+            maxlength="100"
+          >
+        </label>
+
+        <label>
+          Organisation
+          <input
+            name="organisation"
+            autocomplete="organization"
+            required
+            placeholder="Who are you making a difference with?"
+            maxlength="160"
+          >
+        </label>
+
+        <label>
+          Where can we help?
+          <select name="service">
+            <option>Let’s figure it out together</option>
+            <option>Strategy &amp; story</option>
+            <option>Brand &amp; identity</option>
+            <option>Digital experiences</option>
+            <option>Campaigns &amp; action</option>
+          </select>
+        </label>
+
+        <label>
+          What are you hoping to change?
+          <textarea
+            name="purpose"
+            rows="3"
+            required
+            placeholder="Tell us about your cause and what you have in mind."
+            maxlength="5000"
+          ></textarea>
+        </label>
+
+        <button class="solid-button" type="submit">Download project brief</button>
+        <p class="form-note">Your answers stay in your browser. Nothing is sent.</p>
+        <p id="brief-status" role="status"></p>
+      </form>
+    </dialog>
+  </body>
 </html>
+
