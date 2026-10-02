@@ -57,15 +57,6 @@
     <script src="vendor/ScrollTrigger.min.js" defer></script>
     <script src="app.js" defer></script>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQYX2GBM5P"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-FQYX2GBM5P');
-  </script>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
@@ -398,10 +389,49 @@
       <a class="wordmark" href="#" aria-label="Unform back to top">
         <img src="assets/logo-wordmark.svg" alt="Unform" width="180" height="58">
       </a>
-          <span>Unform: design studio for good causes and non-profits in Flemish Brabant, Belgium &middot;</span>
+      <span>Unform: design studio for good causes and non-profits in Flemish Brabant, Belgium &middot;</span>
       <span>© <span id="year">2026</span> Unform</span>
+      <a class="footer-link" href="privacy-policy.html">Privacy</a>
+      <a class="footer-link" href="cookie-policy.html">Cookie policy</a>
+      <button class="footer-link" type="button" data-open-cookie-settings>Cookie settings</button>
       <a href="#">Back to top</a>
     </footer>
+
+    <section id="cookie-banner" class="cookie-banner" aria-labelledby="cookie-title" hidden>
+      <button class="cookie-close" type="button" data-close-cookie-banner aria-label="Close cookie notice">
+        ×
+      </button>
+      <div class="cookie-copy">
+        <span class="section-label">YOUR PRIVACY / COOKIE CHOICES</span>
+        <h2 id="cookie-title">Cookies</h2>
+        <p>
+          We use Google Analytics to understand how people use our website and to improve it.
+          Analytics is optional and only runs if you choose to accept it.
+        </p>
+        <p class="cookie-policy-links">
+          Read our <a href="privacy-policy.html">Privacy policy</a> and
+          <a href="cookie-policy.html">Cookie policy</a>.
+        </p>
+        <details class="cookie-details">
+          <summary>What does Analytics do?</summary>
+          <p>
+            Google Analytics 4 is provided by Google LLC. It measures things such as pages viewed,
+            device information, approximate location and interactions with this website. No
+            Analytics cookies or requests are made before you accept. You can change or withdraw
+            your choice at any time using Cookie settings below.
+          </p>
+        </details>
+        <p id="cookie-status" class="cookie-status" role="status" aria-live="polite"></p>
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-button cookie-reject" type="button" data-cookie-choice="denied">
+          Reject analytics
+        </button>
+        <button class="cookie-button cookie-accept" type="button" data-cookie-choice="granted">
+          Accept analytics
+        </button>
+      </div>
+    </section>
 
     <div id="service-cursor-icon" class="service-cursor-icon" aria-hidden="true"></div>
 
@@ -499,4 +529,3 @@
     </dialog>
   </body>
 </html>
-

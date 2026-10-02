@@ -110,6 +110,104 @@
     document.querySelector('#brief-status').textContent='Your brief is ready to save. Keep it for our first conversation. Nothing has been sent.';
   });
   document.querySelector('#year').textContent=new Date().getFullYear();
+  const analyticsId='G-FQYX2GBM5P';
+  const consentKey='unform-cookie-consent-v1';
+  const consentLifetime=183*24*60*60*1000;
+  const cookieBanner=document.querySelector('#cookie-banner');
+  const cookieStatus=document.querySelector('#cookie-status');
+  let analyticsLoaded=false;
+  window[`ga-disable-${analyticsId}`]=true;
+  function enableAnalytics(){
+    window[`ga-disable-${analyticsId}`]=false;
+    if(analyticsLoaded){
+      window.gtag('event','page_view');
+      return;
+    }
+    analyticsLoaded=true;
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=function(){window.dataLayer.push(arguments);};
+    window.gtag('js',new Date());
+    window.gtag('config',analyticsId,{
+      allow_google_signals:false,
+      allow_ad_personalization_signals:false
+    });
+    const analyticsScript=document.createElement('script');
+    analyticsScript.async=true;
+    analyticsScript.src=`https://www.googletagmanager.com/gtag/js?id=${analyticsId}`;
+    analyticsScript.onerror=()=>{
+      analyticsLoaded=false;
+      console.error('Google Analytics could not be loaded.');
+      cookieStatus.textContent='Analytics could not be loaded. Your preference has been saved.';
+    };
+    document.head.append(analyticsScript);
+  }
+  function disableAnalytics(){
+    window[`ga-disable-${analyticsId}`]=true;
+    document.cookie.split(';').forEach(cookie=>{
+      const name=cookie.split('=')[0].trim();
+      if(name==='_ga'||name.startsWith('_ga_')){
+        document.cookie=`${name}=; Max-Age=0; path=/; SameSite=Lax`;
+        const hostname=location.hostname.split('.');
+        if(hostname.length>2){
+          document.cookie=`${name}=; Max-Age=0; path=/; domain=.${hostname.slice(-2).join('.')}; SameSite=Lax`;
+        }
+      }
+    });
+  }
+  function saveCookieChoice(choice){
+    const consent={analytics:choice==='granted',expiresAt:Date.now()+consentLifetime};
+    let saved=true;
+    try{
+      localStorage.setItem(consentKey,JSON.stringify(consent));
+      cookieStatus.textContent='';
+    }catch(error){
+      saved=false;
+      console.error('Could not save the cookie preference in this browser.',error);
+      cookieStatus.textContent='Your choice applies for this visit, but this browser could not save it.';
+    }
+    if(consent.analytics)enableAnalytics();
+    else disableAnalytics();
+    cookieBanner.hidden=saved;
+  }
+  function readCookieChoice(){
+    try{
+      const stored=localStorage.getItem(consentKey);
+      if(!stored)return null;
+      const consent=JSON.parse(stored);
+      if(typeof consent.analytics!=='boolean'||!Number.isFinite(consent.expiresAt)){
+        localStorage.removeItem(consentKey);
+        return null;
+      }
+      if(consent.expiresAt<=Date.now()){
+        localStorage.removeItem(consentKey);
+        return null;
+      }
+      return consent;
+    }catch(error){
+      console.error('Could not read the saved cookie preference.',error);
+      cookieStatus.textContent='Your browser could not read a saved cookie preference. Please choose below.';
+      return null;
+    }
+  }
+  document.querySelectorAll('[data-cookie-choice]').forEach(button=>{
+    button.addEventListener('click',()=>saveCookieChoice(button.dataset.cookieChoice));
+  });
+  function openCookieSettings(){
+    cookieBanner.hidden=false;
+    cookieBanner.querySelector('[data-cookie-choice="denied"]').focus();
+  }
+  document.querySelector('[data-open-cookie-settings]').addEventListener('click',openCookieSettings);
+  document.querySelector('[data-close-cookie-banner]').addEventListener('click',()=>{
+    cookieBanner.hidden=true;
+  });
+  if(location.hash==='#cookie-settings')openCookieSettings();
+  const savedCookieChoice=readCookieChoice();
+  if(savedCookieChoice){
+    cookieBanner.hidden=true;
+    if(savedCookieChoice.analytics)enableAnalytics();
+  }else{
+    cookieBanner.hidden=false;
+  }
   if(window.gsap&&window.ScrollTrigger){gsap.registerPlugin(ScrollTrigger);gsap.matchMedia().add('(prefers-reduced-motion: no-preference)',()=>{
     gsap.from('.headline-line',{y:65,opacity:0,duration:1.15,stagger:.12,ease:'power3.out'});
     gsap.from('.hero-eyebrow,.hero-bottom,.hero-caption',{opacity:0,y:15,duration:.8,delay:.45,stagger:.1});
