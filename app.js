@@ -87,11 +87,6 @@
       if(serviceIconFrame){cancelAnimationFrame(serviceIconFrame);serviceIconFrame=0;}
     });
   });
-  const menu=document.querySelector('.menu-toggle'),mobileNav=document.querySelector('#mobile-nav');
-  function closeMenu(){menu.setAttribute('aria-expanded','false');mobileNav.hidden=true;menu.querySelector('span').textContent='+';}
-  menu.addEventListener('click',()=>{const expanded=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!expanded));mobileNav.hidden=expanded;menu.querySelector('span').textContent=expanded?'+':'−';});
-  mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenu();}});
   const briefDialog=document.querySelector('#brief-dialog'),projectDialog=document.querySelector('#project-dialog');
   let dialogTrigger=null;
   function openDialog(dialog,trigger){dialogTrigger=trigger;dialog.showModal();document.body.classList.add('dialog-open');}
@@ -109,7 +104,6 @@
     const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const link=document.createElement('a');link.href=url;link.download='unform-project-brief.txt';document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
     document.querySelector('#brief-status').textContent='Your brief is ready to save. Keep it for our first conversation. Nothing has been sent.';
   });
-  document.querySelector('#year').textContent=new Date().getFullYear();
   const consentKey='unform-cookie-consent-v1';
   const consentLifetime=183*24*60*60*1000;
   const cookieBanner=document.querySelector('#cookie-banner');
