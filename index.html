@@ -53,6 +53,7 @@
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%238a7cfb' d='M0 0h64v64H0z'/%3E%3Cpath fill='none' stroke='%23171717' stroke-width='10' d='M18 16v22a14 14 0 0028 0V16'/%3E%3C/svg%3E"
     >
     <link rel="stylesheet" href="styles.css">
+    <script src="preloader.js" defer></script>
     <script src="vendor/gsap.min.js" defer></script>
     <script src="vendor/ScrollTrigger.min.js" defer></script>
     <script src="analytics-consent.js" defer></script>
@@ -60,6 +61,14 @@
     <script src="app.js" defer></script>
   </head>
   <body>
+    <div class="preloader" data-preloader role="status" aria-label="Loading Unform" aria-live="polite">
+      <iframe
+        src="https://lottie.host/embed/dc4b40cc-952a-4566-b94a-00b2e052068a/jyqnhdgjk2.lottie"
+        title="Unform loading animation"
+        aria-hidden="true"
+        tabindex="-1"
+      ></iframe>
+    </div>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="header wrap">
