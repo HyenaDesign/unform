@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "design-that-makes-good-easier-to-find",
+    "title": "Design that makes good easier to find",
+    "summary": "A clear identity helps the people who need your work recognise it, remember it and take the next step.",
+    "thumbnail": "assets/blog-thumbnail-placeholder.svg",
+    "thumbnailAlt": "Placeholder artwork for this article",
+    "category": "Brand strategy",
+    "date": "2026-10-08",
+    "readTime": "4 min read",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Good work does not always speak for itself. People are busy, attention is limited, and even a meaningful mission can be hard to recognise when every message looks and sounds different. Design gives your purpose a shape people can find again."
+      },
+      {
+        "type": "heading",
+        "text": "Recognition starts with consistency"
+      },
+      {
+        "type": "paragraph",
+        "text": "A recognisable identity is not a logo repeated everywhere. It is a small set of decisions that work together: a clear point of view, a confident voice, a considered colour palette and visual elements that feel like they belong to your organisation. Used consistently, those decisions make every poster, page and post easier to connect back to you."
+      },
+      {
+        "type": "heading",
+        "text": "Make the next step obvious"
+      },
+      {
+        "type": "paragraph",
+        "text": "The best design helps people act. Whether you need volunteers, donations or a first conversation, make the invitation specific and easy to follow. Give the most important information room to breathe, use words your audience understands and put the call to action where people expect it."
+      },
+      {
+        "type": "paragraph",
+        "text": "When the message is clear and the experience feels considered, more people can understand what you do and see how they can be part of it. That is design doing useful work."
+      }
+    ]
+  },
+  {
+    "slug": "a-better-brief-starts-with-the-right-questions",
+    "title": "A better brief starts with the right questions",
+    "summary": "Before choosing colours or formats, get clear on the change you want to make and the people you need to reach.",
+    "thumbnail": "assets/blog-thumbnail-placeholder.svg",
+    "thumbnailAlt": "Placeholder artwork for this article",
+    "category": "Working together",
+    "date": "2026-09-17",
+    "readTime": "3 min read",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "A useful creative brief is not a list of deliverables. It is a shared understanding of what needs to change, who that change is for and what a good result would look like. You do not need polished answers before getting started; honest questions are a better beginning."
+      },
+      {
+        "type": "heading",
+        "text": "Start with the people"
+      },
+      {
+        "type": "paragraph",
+        "text": "Who are you trying to reach? What do they already know about your organisation, and what might be getting in their way? The more specific you can be about their needs, the easier it is to make creative choices that feel relevant instead of generic."
+      },
+      {
+        "type": "heading",
+        "text": "Describe the change, not just the asset"
+      },
+      {
+        "type": "paragraph",
+        "text": "A new website or campaign might be part of the answer, but it is not the outcome. Try describing what you want someone to understand, feel or do after encountering it. That gives everyone a useful point of reference as ideas take shape."
+      },
+      {
+        "type": "paragraph",
+        "text": "From there, the right formats and priorities become easier to decide together. A good brief leaves room for expertise while keeping the purpose firmly in view."
+      }
+    ]
+  },
+  {
+    "slug": "small-signals-that-build-trust-online",
+    "title": "Small signals that build trust online",
+    "summary": "A few thoughtful details can help visitors feel confident about who you are and what happens next.",
+    "thumbnail": "assets/blog-thumbnail-placeholder.svg",
+    "thumbnailAlt": "Placeholder artwork for this article",
+    "category": "Digital experiences",
+    "date": "2026-08-26",
+    "readTime": "4 min read",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Trust rarely comes from one grand statement. Online, it grows through small, consistent signals: information that is easy to find, language that feels human and interactions that behave the way people expect."
+      },
+      {
+        "type": "heading",
+        "text": "Be clear about what you do"
+      },
+      {
+        "type": "paragraph",
+        "text": "A visitor should not need to decode your mission. Explain who you help, what you do and where your work happens in plain language. Specific examples and real details give people something concrete to understand and remember."
+      },
+      {
+        "type": "heading",
+        "text": "Respect people's time and attention"
+      },
+      {
+        "type": "paragraph",
+        "text": "Make contact details, useful resources and next steps straightforward to reach. Keep forms focused on what you genuinely need, make links descriptive and ensure the experience works on a phone as well as a desktop."
+      },
+      {
+        "type": "paragraph",
+        "text": "Those details may feel quiet, but together they show care. A thoughtful digital experience helps people spend less effort figuring things out and more energy connecting with your work."
+      }
+    ]
+  }
+]

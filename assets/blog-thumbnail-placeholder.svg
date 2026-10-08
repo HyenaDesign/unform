@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="#e3ff55"/>
+  <path d="M0 0h320v720H0z" fill="#171917"/>
+  <circle cx="322" cy="0" r="370" fill="#8a7cfb"/>
+  <circle cx="322" cy="0" r="245" fill="#e3ff55"/>
+  <path d="M495 172h620v376H495z" fill="#fffff2" stroke="#171917" stroke-width="6"/>
+  <path d="M530 206h550v24H530zM530 252h420v12H530z" fill="#171917"/>
+  <path d="M530 324h550v190H530z" fill="#8a7cfb"/>
+  <path d="M566 484 697 356l90 76 80-90 177 172H566z" fill="#171917"/>
+  <circle cx="1010" cy="366" r="24" fill="#e3ff55"/>
+  <text x="72" y="604" fill="#fffff2" font-family="Arial, sans-serif" font-size="34" font-weight="700">YOUR IMAGE</text>
+  <text x="530" y="586" fill="#171917" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">REPLACE THIS PLACEHOLDER</text>
+</svg>

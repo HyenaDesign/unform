@@ -2012,6 +2012,184 @@ dialog h2 {
   gap: 14px;
 }
 
+.blog-intro h1 {
+  font-size: clamp(76px,11vw,175px);
+}
+
+.blog-intro h1 span {
+  margin-left: .35em;
+}
+
+.blog-list {
+  padding-block: 55px 110px;
+}
+
+.article-list {
+  border-top: 1px solid var(--ink);
+  margin-top: 20px;
+}
+
+.article-row {
+  display: grid;
+  grid-template-columns: 50px minmax(160px,.62fr) minmax(0,1.38fr) 46px;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line);
+  transition: padding .25s ease;
+}
+
+.article-row:hover {
+  padding-inline: 12px;
+}
+
+.article-row-number {
+  align-self: start;
+  padding-top: 4px;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.article-row-thumbnail {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 1.45;
+  background: var(--line);
+}
+
+.article-row-thumbnail img,
+.article-lead-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-row-thumbnail img {
+  transition: transform .45s cubic-bezier(.2,.7,.2,1);
+}
+
+.article-row:hover .article-row-thumbnail img {
+  transform: scale(1.04);
+}
+
+.article-row-meta,
+.article-heading-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  color: var(--muted);
+}
+
+.article-row-copy h3 {
+  margin: 13px 0 7px;
+  font-size: clamp(25px,3vw,42px);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.article-row-copy h3 a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
+}
+
+.article-row-copy p {
+  max-width: 670px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.article-row-action {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  background: var(--accent);
+  font-size: 22px;
+  transition: transform .25s ease;
+}
+
+.article-row:hover .article-row-action {
+  transform: rotate(45deg);
+}
+
+.article-back {
+  padding-top: 32px;
+}
+
+.article-content {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-top: 55px;
+  padding-bottom: 110px;
+}
+
+.article-content > .section-label {
+  display: block;
+  color: var(--muted);
+}
+
+.article-content h1 {
+  width: auto;
+  max-width: 950px;
+  margin: 28px 0 22px;
+  font-size: clamp(54px,8vw,112px);
+  line-height: .98;
+  letter-spacing: -.07em;
+}
+
+.article-summary {
+  max-width: 760px;
+  margin: 0 0 30px;
+  font-size: clamp(19px,2.5vw,27px);
+  line-height: 1.45;
+}
+
+.article-heading-meta {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding-block: 16px;
+}
+
+.article-lead-image {
+  width: 100%;
+  aspect-ratio: 1.75;
+  margin: 32px 0 0;
+  overflow: hidden;
+  background: var(--line);
+}
+
+.article-body {
+  max-width: 700px;
+  margin: 55px auto 0;
+}
+
+.article-body h2 {
+  margin: 42px 0 12px;
+  font-size: clamp(27px,4vw,40px);
+  line-height: 1.1;
+  letter-spacing: -.045em;
+}
+
+.article-body p {
+  margin: 0 0 20px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.article-end-link {
+  margin: 45px auto 0;
+}
+
+.article-error {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
 @media(max-width:1000px) {
 
 .studio-context-content {
@@ -2029,6 +2207,10 @@ dialog h2 {
 
 .project-story-note .text-link {
   grid-column: 2;
+}
+
+.article-content {
+  max-width: 850px;
 }
 }
 
@@ -2064,6 +2246,10 @@ dialog h2 {
 
 .projects-intro {
   padding-top: 28px;
+}
+
+.blog-intro h1 {
+  font-size: clamp(68px,17vw,112px);
 }
 
 .projects-intro-top {
@@ -2136,6 +2322,68 @@ dialog h2 {
 
 .project-story-note .text-link {
   grid-column: auto;
+}
+
+.blog-list {
+  padding-block: 35px 65px;
+}
+
+.article-row {
+  grid-template-columns: 26px minmax(70px,.62fr) minmax(0,1.38fr) 36px;
+  gap: 8px;
+  padding-block: 23px;
+}
+
+.article-row:hover {
+  padding-inline: 0;
+}
+
+.article-row-meta {
+  gap: 8px 14px;
+}
+
+.article-row-meta .section-label {
+  font-size: 9px;
+}
+
+.article-row-copy h3 {
+  margin-top: 11px;
+  font-size: 25px;
+}
+
+.article-row-copy p {
+  font-size: 14px;
+}
+
+.article-row-action {
+  width: 36px;
+  height: 36px;
+}
+
+.article-row-thumbnail {
+  aspect-ratio: 1;
+}
+
+.article-content {
+  padding-top: 35px;
+  padding-bottom: 65px;
+}
+
+.article-content h1 {
+  font-size: 54px;
+}
+
+.article-body {
+  margin-top: 35px;
+}
+
+.article-lead-image {
+  aspect-ratio: 1.25;
+  margin-top: 24px;
+}
+
+.article-body p {
+  font-size: 16px;
 }
 }
 
