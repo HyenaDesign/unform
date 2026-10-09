@@ -3,7 +3,7 @@
   const preloader = document.querySelector('[data-preloader]');
   if (!preloader) return;
 
-  const minimumDuration = 2500;
+  const minimumDuration = 1750;
   const startedAt = performance.now();
   let pageLoaded = document.readyState === 'complete';
   let finished = false;

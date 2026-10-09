@@ -170,7 +170,7 @@ button:focus-visible,a:focus-visible {
 }
 
 .header-note {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.4;
   margin-left: 35px;
 }
@@ -250,7 +250,7 @@ button:focus-visible,a:focus-visible {
 
 .eyebrow,.section-label {
   font-family: var(--font-regular);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.2;
   font-variant-numeric: lining-nums tabular-nums;
@@ -265,7 +265,7 @@ button:focus-visible,a:focus-visible {
 
 .index-mark {
   font-family: monospace;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.2;
 }
 
@@ -356,7 +356,7 @@ h1 {
   align-items: center;
   gap: 9px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .control-icon {
@@ -366,7 +366,7 @@ h1 {
 .hero-caption {
   display: flex;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 40px;
   padding-block: 20px;
   border-top: 1px solid var(--ink);
@@ -524,12 +524,12 @@ h2 {
 }
 
 .hero-eyebrow {
-  font-size: 10px;
+  font-size: 11px;
   gap: 18px;
 }
 
 .index-mark {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .hero h1 {
@@ -566,7 +566,7 @@ h2 {
 }
 
 .hero-caption {
-  font-size: 10px;
+  font-size: 11px;
   margin-top: 28px;
 }
 
@@ -585,7 +585,7 @@ h2 {
 }
 
 .section-label {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 h2 {
@@ -632,7 +632,7 @@ h2 {
 }
 
 .small-note {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
 }
 
@@ -708,7 +708,7 @@ h2 {
 }
 
 .project-tags span {
-  font-size: 12px;
+  font-size: 13px;
   border: 1px solid var(--line);
   padding: 8px 12px;
 }
@@ -809,7 +809,7 @@ h2 {
 
 .service-number {
   font-family: monospace;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0;
   color: #b1b3a9;
   margin-right: 8px;
@@ -846,7 +846,7 @@ h2 {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
   color: #b5b8ac;
 }
 
@@ -896,7 +896,7 @@ h2 {
 
 .count-caption {
   display: block;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .055em;
   margin-top: 35px;
   line-height: 1.4;
@@ -954,7 +954,7 @@ h2 {
 
 .team-card p {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -969,7 +969,7 @@ h2 {
   background: none;
   color: var(--ink);
   font: inherit;
-  font-size: 12px;
+  font-size: 13px;
   text-decoration: none;
 }
 
@@ -993,7 +993,7 @@ button.team-portfolio:disabled {
   bottom: 22px;
   color: var(--muted);
   font-family: monospace;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .principles {
@@ -1005,7 +1005,7 @@ button.team-portfolio:disabled {
 }
 
 .principles span {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .045em;
 }
 
@@ -1081,7 +1081,7 @@ button.team-portfolio:disabled {
   gap: 30px;
   border-top: 1px solid var(--line);
   padding-block: 30px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .footer .wordmark img {
@@ -1155,7 +1155,7 @@ button.team-portfolio:disabled {
 
 .cookie-details {
   margin-top: 15px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .cookie-details summary {
@@ -1167,7 +1167,7 @@ button.team-portfolio:disabled {
 
 .cookie-policy-links {
   margin-top: 12px !important;
-  font-size: 12px !important;
+  font-size: 13px !important;
 }
 
 .cookie-policy-links a {
@@ -1178,13 +1178,13 @@ button.team-portfolio:disabled {
 .cookie-details p {
   margin-top: 10px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .cookie-status:not(:empty) {
   margin-top: 12px;
   color: #8b241d;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .cookie-actions {
@@ -1199,7 +1199,7 @@ button.team-portfolio:disabled {
   padding: 10px 14px;
   border: 1px solid var(--ink);
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
   transition: background .2s,color .2s;
 }
 
@@ -1288,7 +1288,7 @@ dialog img {
 }
 
 .case-description .case-note {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
 }
 
@@ -1299,7 +1299,7 @@ dialog img {
 }
 
 #brief-form label {
-  font-size: 13px;
+  font-size: 14px;
   display: grid;
   gap: 9px;
 }
@@ -1323,7 +1323,7 @@ dialog img {
 }
 
 .form-note,#brief-status {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   margin: 0;
 }
@@ -1365,7 +1365,7 @@ body.dialog-open {
   flex-wrap: wrap;
   justify-content: end;
   gap: 24px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .policy-nav a[aria-current="page"] {
@@ -1375,7 +1375,7 @@ body.dialog-open {
 
 .policy-content .section-label {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .policy-content h1 {
@@ -1389,7 +1389,7 @@ body.dialog-open {
 .policy-updated {
   margin-bottom: 55px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .policy-content h2 {
@@ -1461,7 +1461,7 @@ body.dialog-open {
   gap: 20px;
   border-top: 1px solid var(--line);
   padding-block: 25px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 @media(max-width:1000px) {
@@ -1547,7 +1547,7 @@ body.dialog-open {
   bottom: 14px;
   right: 14px;
   padding: 10px 14px;
-  font-size: 12px;
+  font-size: 13px;
   gap: 20px;
 }
 
@@ -1560,7 +1560,7 @@ body.dialog-open {
 }
 
 .project-caption p {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .project-tags {
@@ -1570,7 +1570,7 @@ body.dialog-open {
 }
 
 .project-tags span {
-  font-size: 10px;
+  font-size: 11px;
   padding: 6px 8px;
 }
 
@@ -1608,7 +1608,7 @@ body.dialog-open {
 }
 
 .service-content ul {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .studio {
@@ -1663,7 +1663,7 @@ body.dialog-open {
 }
 
 .principles span {
-  font-size: 10px;
+  font-size: 11px;
   padding-top: 6px;
 }
 
@@ -1743,7 +1743,7 @@ dialog {
 }
 
 dialog .section-label {
-  font-size: 10px;
+  font-size: 11px;
 }
 
 dialog h2 {
@@ -1787,7 +1787,7 @@ dialog h2 {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .projects-intro-top {
@@ -1875,11 +1875,11 @@ dialog h2 {
 }
 
 .studio-context-facts span:first-child {
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .studio-context-facts span:last-child {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -1892,7 +1892,7 @@ dialog h2 {
 .studio-page .principles p {
   max-width: 340px;
   margin: 12px 0 0;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -1961,7 +1961,7 @@ dialog h2 {
   border-radius: 50%;
   background: var(--paper);
   font-family: monospace;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .project-card-open {
@@ -2003,7 +2003,7 @@ dialog h2 {
 
 .project-card-caption .section-label {
   color: var(--muted);
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .project-card-caption p {
@@ -2044,7 +2044,7 @@ dialog h2 {
 }
 
 .project-story-note .text-link {
-  font-size: 13px;
+  font-size: 14px;
   gap: 14px;
 }
 
@@ -2083,7 +2083,7 @@ dialog h2 {
   align-self: start;
   padding-top: 4px;
   font-family: monospace;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .article-row-thumbnail {
@@ -2290,7 +2290,7 @@ dialog h2 {
 
 .projects-intro-top {
   align-items: start;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .projects-intro-top span:last-child {
@@ -2324,7 +2324,7 @@ dialog h2 {
   flex-wrap: wrap;
   justify-content: start;
   gap: 8px 18px;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .project-story {
@@ -2379,7 +2379,7 @@ dialog h2 {
 }
 
 .article-row-meta .section-label {
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .article-row-copy h3 {
