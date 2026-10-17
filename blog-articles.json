@@ -1,109 +1,113 @@
 [
   {
-    "slug": "design-that-makes-good-easier-to-find",
-    "title": "Design that makes good easier to find",
-    "summary": "A clear identity helps the people who need your work recognise it, remember it and take the next step.",
-    "thumbnail": "assets/blog-thumbnail-placeholder.svg",
-    "thumbnailAlt": "Placeholder artwork for this article",
-    "category": "Brand strategy",
-    "date": "2026-10-08",
+    "slug": "webflow-vs-framer",
+    "title": "Webflow vs Framer: Is There Really a Battle Going On?",
+    "summary": "A closer look at Webflow and Framer, why they are often compared, and what matters most when choosing a tool for web design.",
+    "thumbnail": "assets/webflowvsframer.png",
+    "thumbnailAlt": "Webflow vs Framer",
+    "category": "Web design",
+    "date": "2026-10-17",
     "readTime": "4 min read",
     "content": [
       {
         "type": "paragraph",
-        "text": "Good work does not always speak for itself. People are busy, attention is limited, and even a meaningful mission can be hard to recognise when every message looks and sounds different. Design gives your purpose a shape people can find again."
+        "text": "The world of web design is constantly changing. New tools make it easier and easier to build professional websites without needing to be an experienced developer. Two names that keep coming up are Webflow and Framer. But anyone who looks into web design for a while quickly notices that there are plenty of comparisons and debates between the two."
+      },
+      {
+        "type": "paragraph",
+        "text": "Why, exactly? And is one platform really better than the other?"
       },
       {
         "type": "heading",
-        "text": "Recognition starts with consistency"
+        "text": "Two tools, two different approaches"
       },
       {
         "type": "paragraph",
-        "text": "A recognisable identity is not a logo repeated everywhere. It is a small set of decisions that work together: a clear point of view, a confident voice, a considered colour palette and visual elements that feel like they belong to your organisation. Used consistently, those decisions make every poster, page and post easier to connect back to you."
+        "text": "Webflow and Framer share the same goal: making it more accessible to build and publish modern websites. Still, they go about it differently."
+      },
+      {
+        "type": "paragraph",
+        "text": "Webflow is known for the extensive control it gives you over a website’s structure, design and content. It’s especially interesting for larger projects where flexibility and content management matter. The downside is that you need a bit more time to get a good grip on the platform."
+      },
+      {
+        "type": "paragraph",
+        "text": "Framer, on the other hand, puts a strong emphasis on visual design and speed. You can create attractive pages relatively easily, experiment with animations and put a design online quickly. This makes it interesting for things like portfolios, startups and landing pages."
+      },
+      {
+        "type": "paragraph",
+        "text": "Both tools clearly have advantages. The best choice ultimately depends on the project and on what you, as a designer, want to achieve."
       },
       {
         "type": "heading",
-        "text": "Make the next step obvious"
+        "text": "Why do we keep comparing them?"
       },
       {
         "type": "paragraph",
-        "text": "The best design helps people act. Whether you need volunteers, donations or a first conversation, make the invitation specific and easy to follow. Give the most important information room to breathe, use words your audience understands and put the call to action where people expect it."
+        "text": "What I find interesting is how quickly such a comparison can turn into a debate about which platform is the best. Online, it sometimes seems like you have to pick a side: you’re either team Webflow or team Framer."
       },
       {
         "type": "paragraph",
-        "text": "When the message is clear and the experience feels considered, more people can understand what you do and see how they can be part of it. That is design doing useful work."
-      }
-    ]
-  },
-  {
-    "slug": "a-better-brief-starts-with-the-right-questions",
-    "title": "A better brief starts with the right questions",
-    "summary": "Before choosing colours or formats, get clear on the change you want to make and the people you need to reach.",
-    "thumbnail": "assets/blog-thumbnail-placeholder.svg",
-    "thumbnailAlt": "Placeholder artwork for this article",
-    "category": "Working together",
-    "date": "2026-09-17",
-    "readTime": "3 min read",
-    "content": [
+        "text": "I do understand that rivalry. Both platforms partly target the same audience and naturally want users to choose their product. In doing so, they mainly emphasize their own strengths and their competitor’s limitations."
+      },
       {
         "type": "paragraph",
-        "text": "A useful creative brief is not a list of deliverables. It is a shared understanding of what needs to change, who that change is for and what a good result would look like. You do not need polished answers before getting started; honest questions are a better beginning."
+        "text": "Still, I think we should look at this critically. When a company says its product is better, that doesn’t automatically mean it’s the best choice for everyone. What works efficiently for one designer may be less practical for another."
       },
       {
         "type": "heading",
-        "text": "Start with the people"
+        "text": "Is Framer the future of web design?"
       },
       {
         "type": "paragraph",
-        "text": "Who are you trying to reach? What do they already know about your organisation, and what might be getting in their way? The more specific you can be about their needs, the easier it is to make creative choices that feel relevant instead of generic."
+        "text": "Framer is gaining popularity because it makes designing and publishing visually very accessible. In an industry where speed and a strong online presence matter, that’s a big advantage."
+      },
+      {
+        "type": "paragraph",
+        "text": "But does that mean Webflow will soon become redundant? I don’t think so."
+      },
+      {
+        "type": "paragraph",
+        "text": "Websites simply differ in size and complexity. A simple landing page requires something different from an extensive company website with dozens of pages and a large amount of content. It would be strange to expect one tool to be the best solution in every situation."
+      },
+      {
+        "type": "paragraph",
+        "text": "Moreover, technology is constantly changing. Certain tools are popular today, but tomorrow new developments may reshape the market again. For me, that’s precisely a reason not to blindly chase every trend."
       },
       {
         "type": "heading",
-        "text": "Describe the change, not just the asset"
+        "text": "What does this mean for beginning web designers?"
       },
       {
         "type": "paragraph",
-        "text": "A new website or campaign might be part of the answer, but it is not the outcome. Try describing what you want someone to understand, feel or do after encountering it. That gives everyone a useful point of reference as ideas take shape."
+        "text": "Personally, this might be the most interesting aspect of the whole discussion. When you’re learning something new, it’s easy to feel like you have to choose the right tool right away. After all, you don’t want to invest time in something that later turns out to be less relevant."
       },
       {
         "type": "paragraph",
-        "text": "From there, the right formats and priorities become easier to decide together. A good brief leaves room for expertise while keeping the purpose firmly in view."
-      }
-    ]
-  },
-  {
-    "slug": "small-signals-that-build-trust-online",
-    "title": "Small signals that build trust online",
-    "summary": "A few thoughtful details can help visitors feel confident about who you are and what happens next.",
-    "thumbnail": "assets/blog-thumbnail-placeholder.svg",
-    "thumbnailAlt": "Placeholder artwork for this article",
-    "category": "Digital experiences",
-    "date": "2026-08-26",
-    "readTime": "4 min read",
-    "content": [
+        "text": "Still, I think the fundamentals matter more than the software you work with. Understanding how a website is built, how to create a good user experience and why some designs work better than others are skills you can apply across different platforms."
+      },
       {
         "type": "paragraph",
-        "text": "Trust rarely comes from one grand statement. Online, it grows through small, consistent signals: information that is easy to find, language that feels human and interactions that behave the way people expect."
+        "text": "A website can look fantastic, but if visitors can’t find what they’re looking for, the design misses its purpose. Ultimately, web design isn’t just about nice animations or impressive effects, but also about functionality and ease of use."
       },
       {
         "type": "heading",
-        "text": "Be clear about what you do"
+        "text": "My conclusion"
       },
       {
         "type": "paragraph",
-        "text": "A visitor should not need to decode your mission. Explain who you help, what you do and where your work happens in plain language. Specific examples and real details give people something concrete to understand and remember."
-      },
-      {
-        "type": "heading",
-        "text": "Respect people's time and attention"
+        "text": "I find the competition between Webflow and Framer interesting mainly because it shows how quickly web design is evolving. Both platforms are trying to improve themselves and offer designers new possibilities. That’s a good thing in itself."
       },
       {
         "type": "paragraph",
-        "text": "Make contact details, useful resources and next steps straightforward to reach. Keep forms focused on what you genuinely need, make links descriptive and ensure the experience works on a phone as well as a desktop."
+        "text": "Still, I don’t think there needs to be an absolute winner. Framer may be the best choice for one project, while Webflow offers more possibilities for another."
       },
       {
         "type": "paragraph",
-        "text": "Those details may feel quiet, but together they show care. A thoughtful digital experience helps people spend less effort figuring things out and more energy connecting with your work."
+        "text": "Personally, I’d rather understand what both tools have to offer than simply write off one platform because another happens to be more popular right now."
+      },
+      {
+        "type": "paragraph",
+        "text": "Because in the end, it’s not about the tool you use to build a website, but about what you can create with it."
       }
     ]
   }

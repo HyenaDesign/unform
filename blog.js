@@ -21,7 +21,7 @@
 
   function createThumbnailImage(article, loading) {
     const image = createElement('img');
-    image.src = article.thumbnail || 'assets/blog-thumbnail-placeholder.svg';
+    image.src = article.thumbnail;
     image.alt = article.thumbnailAlt || '';
     image.loading = loading;
     return image;
@@ -40,9 +40,9 @@
     count.textContent = `${String(articles.length).padStart(2, '0')} ARTICLES`;
 
     articles.forEach((article, index) => {
-      const item = createElement('article', 'article-row');
+      const hasThumbnail = Boolean(article.thumbnail);
+      const item = createElement('article', `article-row${hasThumbnail ? '' : ' article-row-no-thumbnail'}`);
       const number = createElement('span', 'article-row-number', String(index + 1).padStart(2, '0'));
-      const thumbnail = createThumbnail(article);
       const copy = createElement('div', 'article-row-copy');
       const metadata = createElement('div', 'article-row-meta');
       metadata.append(
@@ -57,7 +57,9 @@
       const action = createElement('a', 'article-row-action', '↗');
       action.href = articleUrl(article.slug);
       action.setAttribute('aria-label', `Read: ${article.title}`);
-      item.append(number, thumbnail, copy, action);
+      item.append(number);
+      if (hasThumbnail) item.append(createThumbnail(article));
+      item.append(copy, action);
       articleList.append(item);
     });
   }
@@ -73,8 +75,17 @@
     metadata.querySelector('time').dateTime = article.date;
 
     const body = createElement('div', 'article-body');
-    const thumbnail = createElement('figure', 'article-lead-image');
-    thumbnail.append(createThumbnailImage(article, 'eager'));
+    const articleElements = [
+      createElement('p', 'section-label', 'UNFORM / INSIGHTS'),
+      heading,
+      createElement('p', 'article-summary', article.summary),
+      metadata
+    ];
+    if (article.thumbnail) {
+      const thumbnail = createElement('figure', 'article-lead-image');
+      thumbnail.append(createThumbnailImage(article, 'eager'));
+      articleElements.push(thumbnail);
+    }
     article.content.forEach(block => {
       if (block.type === 'heading') {
         body.append(createElement('h2', '', block.text));
@@ -84,11 +95,7 @@
     });
 
     articleContent.replaceChildren(
-      createElement('p', 'section-label', 'UNFORM / INSIGHTS'),
-      heading,
-      createElement('p', 'article-summary', article.summary),
-      metadata,
-      thumbnail,
+      ...articleElements,
       body,
       createElement('a', 'text-link article-end-link', 'Explore more insights')
     );

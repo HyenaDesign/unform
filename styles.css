@@ -2075,6 +2075,10 @@ dialog h2 {
   transition: padding .25s ease;
 }
 
+.article-row-no-thumbnail {
+  grid-template-columns: 50px minmax(0,1fr) 46px;
+}
+
 .article-row:hover {
   padding-inline: 12px;
 }
@@ -2091,6 +2095,7 @@ dialog h2 {
   overflow: hidden;
   aspect-ratio: 1.45;
   background: var(--line);
+  border: 2px solid var(--accent);
 }
 
 .article-row-thumbnail img,
@@ -2368,6 +2373,10 @@ dialog h2 {
   grid-template-columns: 26px minmax(70px,.62fr) minmax(0,1.38fr) 36px;
   gap: 8px;
   padding-block: 23px;
+}
+
+.article-row-no-thumbnail {
+  grid-template-columns: 26px minmax(0,1fr) 36px;
 }
 
 .article-row:hover {
